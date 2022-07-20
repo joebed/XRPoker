@@ -1,0 +1,47 @@
+XRP Poker Game
+
+Classes Needed:
+
+Later on when development continues
+MainAccount
+    {Game: reserve}
+    int reserves
+
+
+Game
+    Deck deck
+    Player[10] players
+    int pot
+    int dealer
+    bool handInProgress
+
+
+
+Player
+    string name
+    int stack
+    bool standby
+    requestCashOut()
+
+
+Host (Derived from Player)
+    cashOut()
+
+
+Deck
+    Card[52]
+    shuffle()
+    dealTop
+
+Card
+    int rank
+    int suit
+
+
+Hand = Round of Poker
+Hole Cards = What is in someone's hand in a round
+
+Main idea for a game:
+Initialize the game
+Players can sit
+Every hand, new deck is created and shuffled, cards dealt out to players, play as expected
