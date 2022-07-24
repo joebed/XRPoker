@@ -1,5 +1,7 @@
 XRP Poker Game
 
+Idea is to use personal XRP Accounts to play poker and get cashed out quickly.
+
 Classes Needed:
 
 Later on when development continues

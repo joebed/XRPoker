@@ -1,5 +1,5 @@
-from card import Card, Suit, Rank
-from player import Player
+from models.card import Card, Suit, Rank
+from models.player import Player
 
 class Deck:
     def __init__(self): 
@@ -8,7 +8,7 @@ class Deck:
         self.deck = []
         for i in range(4):
             for j in range(13):
-                self.deck.append(Card(Suit(i), Rank(j)))
+                self.deck.append(Card(Rank(j), Suit(i)))
 
 
     def shuffle(self):

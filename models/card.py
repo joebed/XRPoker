@@ -29,3 +29,21 @@ class Card:
 
     def __repr__(self):
         return f"{self.rank} of {self.suit}"
+
+    def __str__(self):
+        return f"{self.rank} of {self.suit}"
+
+    def __eq__(self, __o):
+        return self.rank.value == __o.rank.value
+
+    def __ge__(self, __o):
+        return self.rank.value >= __o.rank.value
+
+    def __gt__(self, __o):
+        return self.rank.value > __o.rank.value
+
+    def __lt__(self, __o):
+        return self.rank.value < __o.rank.value
+
+    def __le__(self, __o):
+        return self.rank.value <= __o.rank.value
